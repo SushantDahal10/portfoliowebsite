@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sushant Dahal | Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (optional if you want icons elsewhere) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-margin-top: 64px; /* Height of navbar */
+    }
+  </style>
+</head>
+<body class="bg-[#0d1117] text-gray-200 font-inter">
+
+  <!-- NAVBAR -->
+  <nav class="bg-[#161b22] p-4 sticky top-0 z-50 shadow-xl">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
+      <h1 class="text-xl font-bold text-orange-400">Sushant</h1>
+      <div class="flex flex-wrap space-x-6">
+        <a href="#skills" class="hover:text-orange-400 transition">Skills</a>
+        <a href="#about" class="hover:text-orange-400 transition">About</a>
+        <a href="#experience" class="hover:text-orange-400 transition">Experience</a>
+        <a href="#projects" class="hover:text-orange-400 transition">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="bg-[#161b22] px-6 py-20 flex flex-col md:flex-row items-center justify-between gap-10" data-aos="fade-up">
+    <div class="max-w-xl">
+      <p class="text-lg">Hello, I'm</p>
+      <h1 class="text-4xl font-bold text-white mb-2">Sushant Dahal</h1>
+      <p class="text-lg text-gray-400 mb-4">Aspiring Computer Science Engineer</p>
+      <div class="space-x-4">
+        <a href="#" class="px-4 py-2 border border-orange-400 text-orange-400 rounded hover:bg-orange-400 hover:text-black transition">My resume</a>
+      </div>
+    </div>
+    <div class="w-48 h-48 rounded-full overflow-hidden relative flex items-center justify-center bg-gray-700
+                sm:w-36 sm:h-36
+                md:w-48 md:h-48">
+      <img src="imgpc.jpg" alt="Sushant Dahal Photo" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black opacity-40"></div> <!-- Dark overlay -->
+    </div>
+  </header>
+
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-6xl mx-auto my-12 p-6 bg-[#161b22] rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Technical Skills</h2>
+    <div class="flex flex-wrap gap-4">
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">C</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">C++</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">Python</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">HTML</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">CSS</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">JavaScript</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">ReactJS</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">NodeJS</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">SQL</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">Pandas</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">NumPy</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">Matplotlib</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">R</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">Machine Learning</span>
+      <span class="bg-[#0d1117] border border-gray-700 px-4 py-2 rounded">Data Science</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto my-12 px-6 py-12 bg-[#161b22] rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-orange-400 mb-8 border-b border-gray-700 pb-3">About Me</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Description -->
+      <div class="text-gray-300 leading-relaxed">
+        <p class="mb-4">
+          I am a final-year B.E. Computer Science student at <span class="text-white font-medium">Thapar Institute of Engineering & Technology</span>.
+          I have a strong passion for developing impactful applications and solving real-world problems.
+        </p>
+        <p>
+          I’ve gained experience in <span class="text-white font-medium">Data Analytics, Machine Learning, and Full Stack Development</span>.
+        </p>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-2 gap-6 text-center">
+        <div class="bg-[#0d1117] rounded-lg p-6 shadow-lg hover:scale-105 transition">
+          <p class="text-3xl font-bold text-orange-400">150+</p>
+          <p class="text-sm mt-2 text-gray-400">LeetCode Problems</p>
+        </div>
+        <div class="bg-[#0d1117] rounded-lg p-6 shadow-lg hover:scale-105 transition">
+          <p class="text-3xl font-bold text-orange-400">5+</p>
+          <p class="text-sm mt-2 text-gray-400">Completed Projects</p>
+        </div>
+        <div class="bg-[#0d1117] rounded-lg p-6 shadow-lg hover:scale-105 transition col-span-2">
+          <p class="text-3xl font-bold text-orange-400">1</p>
+          <p class="text-sm mt-2 text-gray-400">Industry Internship (MedTourEasy)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-6xl mx-auto my-12 p-6 bg-[#161b22] rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Experience</h2>
+    <div class="bg-[#0d1117] border border-gray-700 p-4 rounded mb-4">
+      <h3 class="text-lg font-bold text-blue-400">Data Analyst Intern – MedTourEasy (06/25–07/25)</h3>
+      <p class="text-sm mt-2 text-gray-400">Analyzed mortality dataset for research. Explored age differences between left- and right-handed individuals. Coordinated with mentors via Zoho for feedback.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto my-12 p-6 bg-[#161b22] rounded-xl shadow-xl" data-aos="fade-up">
+    <h2 class="text-2xl font-semibold text-orange-400 mb-6 border-b border-gray-600 pb-2">Projects</h2>
+    <div class="space-y-6">
+      <div class="bg-[#0d1117] border border-gray-700 p-4 rounded">
+        <h3 class="text-lg font-bold text-blue-400">Transaction Sharding in Blockchain</h3>
+        <p class="text-sm text-gray-400">Used Louvain & Metis graph algorithms with Docker setup for scalable shard evaluation.</p>
+        <a href="https://github.com/SushantDahal10/Transaction-sharding-in-Blockchain" target="_blank" class="text-blue-400 underline">GitHub</a>
+      </div>
+      <div class="bg-[#0d1117] border border-gray-700 p-4 rounded">
+        <h3 class="text-lg font-bold text-blue-400">Customer Support Ticket Classifier</h3>
+        <p class="text-sm text-gray-400">NLP classifier on 1.5M complaints using TF-IDF, NMF, Logistic Regression, and RF.</p>
+        <a href="https://github.com/SushantDahal10/customersupportticketclassifier/tree/master" target="_blank" class="text-blue-400 underline">GitHub</a>
+      </div>
+      <div class="bg-[#0d1117] border border-gray-700 p-4 rounded">
+        <h3 class="text-lg font-bold text-blue-400">Bus Booking System</h3>
+        <p class="text-sm text-gray-400">Full-stack MERN project with admin interface and secure ticket booking flow.</p>
+        <a href="https://github.com/SushantDahal10/Online-Bus-Booking-system" target="_blank" class="text-blue-400 underline">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#161b22] py-10 mt-16">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
+      <h3 class="text-xl font-semibold text-gray-100">Connect with Me</h3>
+      <div class="flex gap-6 items-center">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sushant-dahal-978344250" target="_blank" aria-label="LinkedIn"
+           class="hover:bg-orange-400 transition-colors rounded-full bg-white p-2 flex items-center justify-center w-10 h-10">
+          <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" class="w-6 h-6 object-contain" />
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/SushantDahal10" target="_blank" aria-label="GitHub"
+           class="hover:bg-orange-400 transition-colors rounded-full bg-white p-2 flex items-center justify-center w-10 h-10">
+          <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" class="w-6 h-6 object-contain" />
+        </a>
+
+        <!-- LeetCode -->
+        <a href="https://leetcode.com/u/sushantdahal50/" target="_blank" aria-label="LeetCode"
+           class="hover:bg-orange-400 transition-colors rounded-full bg-white p-2 flex items-center justify-center w-10 h-10">
+          <img src="https://leetcode.com/favicon.ico" alt="LeetCode" class="w-6 h-6 object-contain" />
+        </a>
+
+        <!-- Kaggle -->
+        <a href="https://www.kaggle.com/sushantdahal10" target="_blank" aria-label="Kaggle"
+           class="hover:bg-orange-400 transition-colors rounded-full bg-white p-2 flex items-center justify-center w-10 h-10">
+          <img src="https://www.kaggle.com/static/images/favicon.ico" alt="Kaggle" class="w-6 h-6 object-contain" />
+        </a>
+
+        <!-- Email (opens Gmail compose in new tab) -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushantdahal50@gmail.com" target="_blank" aria-label="Email"
+           class="hover:bg-orange-400 transition-colors rounded-full bg-white p-2 flex items-center justify-center w-10 h-10">
+          <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email" class="w-6 h-6 object-contain" />
+        </a>
+
+      </div>
+      <p class="text-sm text-gray-500 mt-4">© 2025 Sushant Dahal. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
